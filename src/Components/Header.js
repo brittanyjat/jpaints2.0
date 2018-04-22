@@ -18,6 +18,7 @@ export default class Header extends Component {
                         <span>About</span>
                         <span>Services</span>
                         <span>Portfolio</span>
+                        <span>Reviews</span>
                         <span>Contact</span>
                     </div>
                 </div>
