@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import lisa from '../assets/lisa.png';
+import { Link } from 'react-router-dom';
 
 export default class Header extends Component {
     render() {
         return (
             <div id='header'>
                 <div className='header-title'>
-                    <h1>JPaints Utah</h1>
                     <div>
+                        <h1>JPaints Utah</h1>
+                    </div>
+                    <div className='subtitles'>
                         <span>Thumbtack Top Pro</span>
-                        <span>{'Residential - Commerical - Exterior'}</span>
+                        <span>{'Residential - Commercial - Interior - Exterior'}</span>
                         <span>(385) 275-6993</span>
                     </div>
                 </div>
@@ -17,13 +19,10 @@ export default class Header extends Component {
                     <div>
                         <span>About</span>
                         <span>Services</span>
-                        <span>Portfolio</span>
-                        <span>Reviews</span>
+                        <Link to='/portfolio'><span>Portfolio</span></Link>
+                        <Link to='/reviews'><span>Reviews</span></Link>
                         <span>Contact</span>
                     </div>
-                </div>
-                <div className='hero' style={{ background: `linear-gradient(to right, rgba(125, 125, 125, 0.3), rgba(125, 125, 125, 0.3)), url(${lisa})` }}>
-                    {/* <span>Welcome</span> */}
                 </div>
             </div>
         )

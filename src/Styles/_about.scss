@@ -2,7 +2,8 @@
     div {
         margin-top: -35px;
         p {
-            font-family: 'Maitree', serif;
+            // font-family: 'Maitree', serif;
+            font-family: 'Open Sans', sans-serif;
             font-size: 10px;
             width: 100%;
             text-indent: 30px;
@@ -10,7 +11,8 @@
         }
     }
     span {
-        font-family: 'Maitree', serif;        
+        // font-family: 'Maitree', serif;
+        font-family: 'Open Sans', sans-serif; 
         width: 80%;
         text-align: right;
     }
@@ -19,7 +21,7 @@
 h2 {
     background-color: white;
     color: #2E2E2E;
-    width: 40%;
+    width: 50%;
     text-align: center;
     text-transform: uppercase;
     position: relative;
@@ -29,7 +31,7 @@ h2 {
 
 .section {
     width: 90%;
-    border-top: #2E2E2E 2px solid;
+    border-top: #96BBBB 2px solid;
     margin: auto;
     margin-top: 65px;
     display: flex;
@@ -64,5 +66,11 @@ h2 {
     h2 {
         bottom: 45px;
         font-size: 32px;
+    }
+}
+
+@media (min-width:600px){
+    h2 {
+        width: 35%;
     }
 }

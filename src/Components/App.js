@@ -1,14 +1,17 @@
 import React from 'react';
-import Header from './Header';
-import About from './About';
-import Services from './Services';
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import Portfolio from './Portfolio';
+import Reviews from './Reviews';
 
 function App() {
   return (
     <div id="App">
-      <Header />
-      <About />
-      <Services />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/reviews' component={Reviews} />
+        <Route path='/portfolio' component={Portfolio} />
+      </Switch>
     </div>
   )
 }
