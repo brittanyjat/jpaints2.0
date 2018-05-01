@@ -24,22 +24,6 @@ export default function ReviewCarousel() {
             description: 'Interior Painting in West Valley City, UT'
         },
         {
-            id: 4,
-            name: 'Tylor W.',
-            review: '"Great experience. They were extremely professional and accommodating. We will definitely use them again. Highly recommended."',
-            date: 'Feb 26, 2018',
-            stars: 5,
-            description: 'Interior Painting in Salt Lake City, UT'
-        },
-        {
-            id: 3,
-            name: 'Molly W.',
-            review: '"They were fantastic! Professional and courteous. They left my house clean and did a seriously rad job on the painting. I was really impressed. She communicated well and clearly and got the job done in a very reasonable amount of time."',
-            date: 'Mar 2, 2018',
-            stars: 5,
-            description: 'Interior Painting in Ogden, UT'
-        },
-        {
             id: 7,
             name: 'Thumbtack Customer',
             review: '"Jess was very professional and did a neat job with our requests. We are already rehiring her to do more painting work. It was a pleasure to work with Jess."',
@@ -53,9 +37,9 @@ export default function ReviewCarousel() {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 7500,
+        autoplaySpeed: 8000,
         pauseOnHover: true,
-        speed: 1000,
+        speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1
     };

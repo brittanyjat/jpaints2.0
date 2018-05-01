@@ -7,42 +7,42 @@
 // REVIEW CAROUSEL //
 
 .review-carousel {
-    // margin-top: 20px;
-    background-color: rgba($color: #E2E2E2, $alpha: .2);
+    min-height: 130px;
+    background-color: rgba($color: #96BBBB, $alpha: .8);
 }
 
 .review-slide {
-    min-height: 115px;
+    height: 12px !important;
     font-family: 'Open Sans', sans-serif;
     padding-left: 10px;
-    padding-top: 18px;
     p {
         width: 85%;
         padding-left: 15px;
+        margin-left: 5px;
     }
     p:nth-child(1){
-        border-left: 1px solid black;
         font-style: italic;
-        margin-left: 5px;
         font-size: 12px;
+        margin-top: 18px !important;
     }
     p:nth-child(2) {
         font-size: 10px;
+        margin-left: 10px;
     }
     p:nth-child(3) {
         font-size: 8px;
+        margin-left: 10px;
         margin-top: -8px;
     }
 }
 
 @media (min-width:768px){
     .review-slide {
-        height: 150px;
         padding-left: 25px;
         padding-top: 18px;
         p:nth-child(1){
-            margin-top: 20px;
-            font-size: 15px;
+            margin-top: 0px !important;
+            font-size: 14px;
         }
         p:nth-child(2) {
             font-size: 13px;
@@ -60,7 +60,6 @@
         padding-left: 35px;
         p:nth-child(1){
             margin-top: 30px;
-            font-size: 16px;
         }
     }
 }

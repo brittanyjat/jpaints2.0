@@ -1,0 +1,31 @@
+.contact-container {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+        background-color: rgba($color: #E2E2E2, $alpha: .9);
+        width: 60%;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+            opacity: .9;
+            width: 75%;
+        }
+        p {
+            width: 75%;
+            text-align: left;
+        }
+        textarea {
+            opacity: .9;
+            width: 75%;
+            height: 150px;
+        }
+    }
+}
