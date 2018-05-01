@@ -83,6 +83,7 @@ body {
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+    // background-attachment: fixed !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +129,6 @@ body {
         margin-right: 6%;
     }
     #hero {
-        height: 450px;
+        height: 550px;
     }
 }
