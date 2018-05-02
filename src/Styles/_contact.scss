@@ -2,7 +2,6 @@
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +36,15 @@
         font-weight: 300 !important;
         text-transform: uppercase;
         letter-spacing: 3px;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .contact-container{
+        background-attachment: fixed !important;
+        form {
+            width: 50%;
         }
     }
 }

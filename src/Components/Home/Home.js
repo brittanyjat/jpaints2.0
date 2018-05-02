@@ -1,19 +1,19 @@
 import React from 'react';
-import About from './About';
+import About from './About'
 import Services from './Services';
 import Contact from './Contact';
-import Header from './Header';
-import ReviewCarousel from './ReviewCarousel';
-import TopPro from './TopPro';
+import Header from '../Header';
+import Hero from './Hero';
+import lisa3 from '../../assets/lisa3.png';
+// import ReviewCarousel from './ReviewCarousel';
 
 function Home() {
     return (
         <div>
             <Header />
+            <Hero img={lisa3} />
             <About />
-            <br />
-            <TopPro />
-            <ReviewCarousel />
+            {/* <ReviewCarousel /> */}
             <Services />
             <Contact />
         </div>

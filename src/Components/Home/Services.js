@@ -1,8 +1,8 @@
 import React from 'react';
-import exterior from '../assets/exterior.png';
-import t1 from '../assets/t1.jpg';
-import brick1 from '../assets/brick1.png';
-import cabinet1 from '../assets/cabinet1.jpeg';
+import exterior from '../../assets/exterior.png';
+import t1 from '../../assets/t1.jpg';
+import brick1 from '../../assets/brick1.png';
+import cabinet1 from '../../assets/cabinet1.jpeg';
 
 export default function Services() {
     return (

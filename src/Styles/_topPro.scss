@@ -1,6 +1,7 @@
 .top-pro-container {
     display: flex;
     justify-content: center;
+    background-size: contain !important;
     div {
         background-color: rgba($color: #E2E2E2, $alpha: .9);
         width: 60%;

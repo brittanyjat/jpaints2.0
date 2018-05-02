@@ -1,5 +1,5 @@
 import React from 'react';
-import room7 from '../assets/room7.jpeg';
+import room7 from '../../assets/room7.jpeg';
 
 export default function Contact() {
     return (
@@ -12,14 +12,14 @@ export default function Contact() {
                 <input type='tel' />
                 <p>Email *</p>
                 <input type='email' />
-                <p>Type of project</p>
+                {/* <p>Type of project</p>
                 <select>
                     <option>Interior Painting</option>
                     <option>Exterior Painting</option>
                     <option>Specialty Painting</option>
                     <option>Cabinet Painting</option>
                     <option>Other</option>
-                </select>
+                </select> */}
                 <p>Message *</p>
                 <textarea type='text' />
                 <input type='submit' style={{marginBottom: '30px'}}/>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from './Home';
+import Home from '../Components/Home/Home';
 import Portfolio from './Portfolio';
 import Reviews from './Reviews';
 import AboutMain from './AboutMain';
+import ContactMain from './ContactMain';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/reviews' component={Reviews} />
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/about' component={AboutMain} />
+        <Route path='/contact' component={ContactMain} />
       </Switch>
     </div>
   )
