@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Maitree:400,500');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
+$dkGray: #3E4E50;
+$gold: #B49A67;
+
 body {
     margin: 0;
     padding: 0;
@@ -29,8 +32,10 @@ body {
     width: 90%;
     margin: auto;
     h1 {
-        font-family: 'Poiret One', cursive;
-        color: #3E4E50;
+        font-family: 'Crimson Text', serif;
+        // font-family: 'Poiret One', cursive;
+        color: $dkGray;
+        text-decoration: underline;
     }
     div {
         width: 60px;
@@ -122,6 +127,6 @@ body {
 
 @media (min-width:1050px){
     .hero {
-        height: 75vh;
+        height: 70vh;
     }
 }

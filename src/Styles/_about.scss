@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i');
 
 .about-container {
-    margin-top: 50px;
+    // margin-top: 50px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,11 +60,20 @@
     color: #68BABA;
 }
 
-
-.section {
+.partition {
+    margin-top: 15px;
+    height: 90px;
+    width: 100%;
+    background-color: #3E4E50;
+    border-bottom: 4px solid #B49A67;
+    border-top: 4px solid #B49A67;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+    i {
+        color: #B49A67;
+        margin-bottom: 5px;
+    }
 }
 
 @media (min-width:818px){
@@ -85,6 +94,10 @@
             width: 80%;
         }
     }
+    .partition {
+        margin-top: -25px !important;
+        height: 100px;
+    }
 }
 
 @media (min-width:925px){
@@ -99,4 +112,11 @@
         grid-gap: 50px;
     }
 
+}
+
+@media (min-width:768px){
+    .partition {
+        margin-top: 15px;
+        height: 130px;
+    }
 }

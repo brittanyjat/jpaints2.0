@@ -8,7 +8,9 @@
 
 .review-carousel {
     min-height: 130px;
-    background-color: rgba($color: #96BBBB, $alpha: .8);
+    background-color: rgba($color: $dkGray, $alpha: 1);
+    border-bottom: 4px solid $gold;
+    border-top: 4px solid $gold;
 }
 
 .review-slide {
@@ -16,6 +18,7 @@
     font-family: 'Open Sans', sans-serif;
     padding-left: 10px;
     p {
+        color: #DBDEDF;
         width: 85%;
         padding-left: 15px;
         margin-left: 5px;
@@ -33,6 +36,7 @@
         font-size: 8px;
         margin-left: 10px;
         margin-top: -8px;
+        color: $gold;
     }
 }
 

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 export default function About() {
     return (
         <div className='about-container'>
+            <div className='partition'><i className="fas fa-chevron-down"></i></div>
             <h3>We believe in strong work ethic, integrity, time management, and an incredibly fine attention to the details.</h3>
             <div className='about-tile-container'>
                 <div className='about-tile'>

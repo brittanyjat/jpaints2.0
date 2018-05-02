@@ -5,7 +5,7 @@ import Contact from './Contact';
 import Header from '../Header';
 import Hero from './Hero';
 import lisa3 from '../../assets/lisa3.png';
-// import ReviewCarousel from './ReviewCarousel';
+import ReviewCarousel from '../ReviewCarousel';
 
 function Home() {
     return (
@@ -13,7 +13,7 @@ function Home() {
             <Header />
             <Hero img={lisa3} />
             <About />
-            {/* <ReviewCarousel /> */}
+            <ReviewCarousel />
             <Services />
             <Contact />
         </div>
