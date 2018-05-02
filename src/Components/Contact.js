@@ -9,9 +9,9 @@ export default function Contact() {
                 <p>Name *</p>
                 <input type='text' />
                 <p>Phone Number *</p>
-                <input type='text' />
+                <input type='tel' />
                 <p>Email *</p>
-                <input type='text' />
+                <input type='email' />
                 <p>Type of project</p>
                 <select>
                     <option>Interior Painting</option>
@@ -22,6 +22,7 @@ export default function Contact() {
                 </select>
                 <p>Message *</p>
                 <textarea type='text' />
+                <input type='submit' style={{marginBottom: '30px'}}/>
             </form>
         </div>
     )

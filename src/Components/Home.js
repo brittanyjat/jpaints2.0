@@ -12,8 +12,8 @@ function Home() {
             <Header />
             <About />
             <br />
-            {/* <ReviewCarousel /> */}
             <TopPro />
+            <ReviewCarousel />
             <Services />
             <Contact />
         </div>

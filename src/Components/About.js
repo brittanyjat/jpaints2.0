@@ -1,15 +1,29 @@
 import React from 'react';
-import jess from '../assets/jess.jpg';
+import room3 from '../assets/room3.jpeg';
 
 export default function About() {
     return (
         <div className='about-container'>
             <h3>We believe in strong work ethic, integrity, time management, and an incredibly fine attention to the details.</h3>
-            <div>
-                <img src={jess} alt='jess' />
-                <p>{'In 2009 I graduated a Painters & Allied Trades Local 77 Union pre apprentice residential/commercial/industrial trade program where I worked to earn certifications through over 1300 labor hours covering all areas of the trade also including drywalling, wallpapering, wood staining, and other special techniques. Certifications I have earned are OSHA-10, heavy equipment training and scaffolding, etc. Since graduating the program I have done many painting jobs throughout the years. Some big and some small, each as important as the other. I treat every opportunity I earn as I would if it were my own with a strong work ethic, integrity, time management, and an incredibly fine attention to the details. I would feel so lucky enough to offer my services to anyone who thinks I may be a good fit for their needs.'}</p>
-                <p>{"The very thing I most enjoy about painting will always be seeing someone's reaction at the completion of a job. It is so rewarding for me to show someone that something can be even better than they ever imagined it could. To me, everything we have is earned through hard work, perseverance, optimism, honesty, and k i n d n e s s and I take pride in these genuine qualities. I can't wait to help your painting project turn out even better than you thought."}</p>
-                <span>- Jessica Baldwin</span>
+            <div className='about-tile-container'>
+                <div className='about-tile'>
+                    <img src={room3} alt='about-page' />
+                    <h4>About</h4>
+                    <p>Find out more about our company, mission, and what our customers have to say.</p>
+                    <div>
+                        <p className='learn-more'>Learn More </p>
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+                <div className='about-tile'>
+                    <img src={room3} alt='about-page' />
+                    <h4>Take Action</h4>
+                    <p>Ready to take the next step? Fill out our contact form to schedule a free estimate.</p>
+                    <div>
+                        <p className='learn-more'>Contact Us </p>
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
             </div>
         </div>
     )
