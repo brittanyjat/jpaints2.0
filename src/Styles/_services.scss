@@ -21,6 +21,7 @@
         letter-spacing: 3px;
         font-size: 17px;
         text-transform: uppercase;
+        color: $ltBlue;
     }
     span {
         width: 90%;
@@ -32,12 +33,28 @@
     }
 }
 
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Crimson Text', serif;
+    }
+}
+
 @media (min-width:768px){
     .service-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 90%;
-        margin: auto;
     }
     .service {
         margin-bottom: 50px !important;
@@ -48,5 +65,13 @@
 @media (min-width:1000px){
     .service-container {
         width: 85%;
+    }
+}
+
+@media (min-width:818px){
+    .service-section {
+        h2 {
+            font-size: 30px;
+        }
     }
 }

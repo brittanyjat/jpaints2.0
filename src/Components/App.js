@@ -5,6 +5,7 @@ import Portfolio from './Portfolio';
 import Reviews from './Reviews';
 import AboutMain from './AboutMain';
 import ContactMain from './ContactMain';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/about' component={AboutMain} />
         <Route path='/contact' component={ContactMain} />
       </Switch>
+      <Footer />
     </div>
   )
 }

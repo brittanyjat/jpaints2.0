@@ -4,6 +4,7 @@ import room7 from '../../assets/room7.jpeg';
 export default function Contact() {
     return (
         <div className='contact-container' style={{ background: `linear-gradient(to right, rgba(75, 75, 75, 0.2), rgba(75, 75, 75, 0.2)), url(${room7})` }}>
+            {/* <div className='partition'></div> */}
             <form>
                 <h2>Contact</h2>
                 <p>Name *</p>
@@ -22,7 +23,7 @@ export default function Contact() {
                 </select> */}
                 <p>Message *</p>
                 <textarea type='text' />
-                <input type='submit' style={{marginBottom: '30px'}}/>
+                <input type='submit' style={{ marginBottom: '30px' }} />
             </form>
         </div>
     )

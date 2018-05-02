@@ -6,8 +6,9 @@ import cabinet1 from '../../assets/cabinet1.jpeg';
 
 export default function Services() {
     return (
-        <div className='section'>
+        <div className='service-section'>
             <h2>Services</h2>
+            <br />
             <div className='service-container'>
                 <div className='service'>
                     <img src={t1} alt='interior-painting' />

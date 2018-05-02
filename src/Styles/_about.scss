@@ -39,7 +39,7 @@
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
         font-size: 24px;
-        color: #68BABA;
+        color: $ltBlue;
         font-weight: 300;
         margin-top: 25px;
         margin-bottom: -5px;
@@ -50,7 +50,7 @@
         width: 115px;
         align-items: center !important;
         i {
-            color: #68BABA; 
+            color: $ltBlue; 
             margin-top: 4px;
         }
     }
@@ -64,14 +64,14 @@
     margin-top: 15px;
     height: 90px;
     width: 100%;
-    background-color: #3E4E50;
-    border-bottom: 4px solid #B49A67;
-    border-top: 4px solid #B49A67;
+    background-color: $dkGray;
+    border-bottom: 4px solid $gold;
+    border-top: 4px solid $gold;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     i {
-        color: #B49A67;
+        color: $gold;
         margin-bottom: 5px;
     }
 }
@@ -89,7 +89,6 @@
         margin-bottom: 40px;
         h3 {
             font-size: 30px;
-
             text-align: center;
             width: 80%;
         }

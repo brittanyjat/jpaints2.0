@@ -5,6 +5,9 @@
 
 $dkGray: #3E4E50;
 $gold: #B49A67;
+$ltBlue: #68BABA;
+$ltGray: #DBDEDF;
+$font1: 'Crimson Text', serif;
 
 body {
     margin: 0;
@@ -32,8 +35,7 @@ body {
     width: 90%;
     margin: auto;
     h1 {
-        font-family: 'Crimson Text', serif;
-        // font-family: 'Poiret One', cursive;
+        font-family: $font1;
         color: $dkGray;
         text-decoration: underline;
     }

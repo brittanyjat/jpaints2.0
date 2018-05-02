@@ -40,6 +40,26 @@
     }
 }
 
+// ===== MINI CONTACT ===== //
+
+.mini-contact {
+    margin: auto;
+    width: 250px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font1;
+        color: $ltGray;
+        letter-spacing: 1.5px;
+        font-size: 17px;
+        margin-bottom: -5px;
+    }
+}
+
 @media (min-width:768px){
     .contact-container{
         background-attachment: fixed !important;
