@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import room7 from '../assets/room7.jpeg';
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router'
 
-export default class Header extends Component {
+class Header extends Component {
     constructor() {
         super();
 
@@ -9,9 +12,14 @@ export default class Header extends Component {
         }
     }
 
+    componentWillReceiveProps(nextProps) {
+        if (nextProps) {
+            this.setState({ showNav: false })
+        }
+    }
+
     render() {
         const { showNav } = this.state;
-
         return (
             <div id='header'>
                 <h1>JPaints Utah</h1>
@@ -22,11 +30,18 @@ export default class Header extends Component {
                     showNav
                         ?
                         <div className='side-nav'>
-                            <i className="fas fa-times" onClick={(e) => this.setState({ showNav: !showNav })}></i>
-                            <span>Home</span>
-                            <span>About</span>
-                            <span>Contact</span>
-                            <span>Reviews</span>
+                            <div>
+                                <i className="fas fa-times" onClick={(e) => this.setState({ showNav: !showNav })}></i>
+                            </div>
+                            <div>
+                                <Link to='/'><span>Home</span></Link>
+                                <Link to='/about'><span>About</span></Link>
+                                <Link to='/contact'><span>Contact</span></Link>
+                                <Link to='/reviews'><span>Reviews</span></Link>
+                            </div>
+                            <div>
+                                <img src={room7} alt='bedroom' />
+                            </div>
                         </div>
                         : null
                 }
@@ -34,3 +49,5 @@ export default class Header extends Component {
         )
     }
 }
+
+export default withRouter(Header);
