@@ -1,6 +1,6 @@
 import React from 'react';
-import room2 from '../assets/room2.jpeg';
-import top from '../assets/top.jpg';
+import room2 from '../../assets/room2.jpeg';
+import top from '../../assets/top.jpg';
 
 export default function TopPro() {
     return (

@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Home/Hero';
 import commercial2 from '../../assets/commercial2.jpeg';
 import jess from '../../assets/jess.jpg';
+import TopPro from './TopPro';
 
 let aboutSubtitle =
     <div className='subtitle sub-subtitle'>
@@ -21,6 +22,8 @@ export default function AboutMain() {
                     <p>Jess Baldwin</p>
                 </div>
             </div>
+            <br />
+            <TopPro />
         </div>
     )
 }

@@ -1,17 +1,18 @@
 import React from 'react';
-import reviews from '../reviews';
+import Hero from './Home/Hero';
+import room7 from '../assets/room7.jpeg';
+// import reviews from '../reviews';
 
 export default function Reviews() {
-    let reviewCards = reviews.map((x, i) => {
-        return (
-            <span key={i}>{x.name}</span>
-        )
-    })
+
+    let reviewSubtitle =
+        <div className='subtitle sub-subtitle'>
+            <span>Reviews</span>
+        </div>
 
     return (
         <div className='section'>
-            <h2>Reviews</h2>
-            {reviewCards}
+            <Hero img={room7} title={reviewSubtitle} />
         </div>
     )
 }

@@ -60,22 +60,7 @@
         }
         div {
             width: 55% !important;
-            margin-top: 15px;
-            font-weight: 300;
-            p {
-                font-family: $font2;
-                text-indent: 30px;
-                line-height: 22px;
-                font-size: 13px;
-                letter-spacing: .25px;
-            }
-            p:nth-child(3) {
-                letter-spacing: 2px;
-                font-size: 17px;
-                text-transform: uppercase;
-                color: $ltBlue;
-                float: right;
-            }
+
         }
     }
 }
