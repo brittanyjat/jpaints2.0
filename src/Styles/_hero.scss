@@ -78,29 +78,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    div {
-        position: relative;
-        top: 50px;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        align-items: center;
-        width: 70%;
-        padding: 20px;
-        box-sizing: border-box;
-        span {
-            font-family: 'Open Sans', sans-serif;
-            text-transform: uppercase;
-            color: #3E4E50;
-            letter-spacing: 1px;
-            font-size: 12px;
-
-        }
-        span:nth-child(1) {
-            font-family: 'Crimson Text', serif;
-            font-size: 19px;
-        }
-    }
 }
 
 .side-nav {
@@ -152,6 +129,42 @@ body {
     }
 }
 
+//===== HERO SUBTITLE =====//
+.subtitle {
+    position: relative;
+    top: 50px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-subtitle {
+    span {
+        font-family: $font2;
+        text-transform: uppercase;
+        color: $dkGray;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
+    span:nth-child(1) {
+        font-family: $font1;
+        font-size: 19px;
+    }
+}
+
+.sub-subtitle{
+    span {
+        font-size: 36px !important;
+        letter-spacing: 3px !important;
+    }
+}
+
 @media (min-width:500px){
     #App {
         margin: 4%;
@@ -165,14 +178,11 @@ body {
     .hero {
         height: 50vh;
         margin-top: -25px;
-        div {
-            width: 60%;
+        .subtitle {
+            width: 50%;
             padding: 10px;
             top: 65px;
             span {
-                font-family: 'Open Sans', sans-serif;
-                text-transform: uppercase;
-                color: $dkGray;
                 letter-spacing: 1.5px;
                 font-size: 14px;
     

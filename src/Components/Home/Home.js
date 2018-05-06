@@ -5,10 +5,19 @@ import Hero from './Hero';
 import lisa3 from '../../assets/lisa3.png';
 import ReviewCarousel from './ReviewCarousel';
 
+let homeSubtitle =
+    <div className='subtitle'>
+        <span>Thumbtack Top Pro</span>
+        <span>Interior</span>
+        <span>Exterior</span>
+        <span>Residential</span>
+        <span>Commercial</span>
+    </div>
+
 function Home() {
     return (
         <div>
-            <Hero img={lisa3} />
+            <Hero img={lisa3} home={true} title={homeSubtitle} />
             <About />
             <ReviewCarousel />
             <Services />
