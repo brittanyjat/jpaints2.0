@@ -22,7 +22,7 @@ class Header extends Component {
         const { showNav } = this.state;
         return (
             <div id='header'>
-                <h1>JPaints Utah</h1>
+                <Link to='/'><h1>JPaints Utah</h1></Link>
                 <div onClick={() => this.setState({ showNav: !showNav })} className='menu-trigger'>
                     <i className="fas fa-bars"></i>
                 </div>
