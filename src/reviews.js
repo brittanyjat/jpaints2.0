@@ -158,6 +158,14 @@ module.exports = [
         date: 'Feb 6, 2017',
         stars: 5,
         description: ''
+    },
+    {
+        id: 20,
+        name: 'Brick F.',
+        review: 'Very happy about my latest experience with JPaints. Jess was so easy to work with and she worked very quickly. We couldn’t be happier with the final product and would definitely recommend her to anyone looking for quality work at a reasonable price.',
+        date: 'Apr 28, 2018',
+        stars: 5,
+        description: 'Interior Painting'
     }
 ]
 
