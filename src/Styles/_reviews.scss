@@ -1,9 +1,3 @@
-.span {
-    border: solid 1px brown;
-    width: 250px;
-    height: 150px !important;
-}
-
 // REVIEW CAROUSEL //
 
 .review-carousel {
@@ -66,4 +60,69 @@
             margin-top: 30px;
         }
     }
+}
+
+// ===== REVIEW MAIN ===== //
+
+.review-card-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 30px;
+}
+
+.review-card {
+    border: solid 2px $ltGray;
+    margin: auto;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    font-family: $font2;
+    align-items: center;
+    i {
+        font-size: 20px;
+        color: $dkGray;
+        background-color: white;
+        border: solid .5px $ltGray;
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 22px;
+    }
+    span {
+        margin-top: -5px;
+        width: 91%;
+        text-indent: 30px;
+        line-height: 22px;
+        font-size: 13px;
+        letter-spacing: .25px;
+    }
+    div {
+        width: 90%;
+        p {
+            text-align: right;
+            width: 100%;
+            font-size: 12px;
+            margin-top: -5px;
+        }
+        p:nth-child(1) {
+            margin-top: 15px;
+            text-transform: uppercase;
+            color: $ltBlue;
+            letter-spacing: 2px;
+            font-size: 17px;               
+        }
+    }
+}
+
+@media (min-width:900px){
+    // .review-card-container {
+    //     margin-top: 80px !important;
+    //     grid-template-columns: 50% 50%;
+    //     width: 90%;
+    //     margin: auto;
+    // }
+        .review-card {
+            width: 70%;
+        }
 }

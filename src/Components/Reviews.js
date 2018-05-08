@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './Home/Hero';
 import room7 from '../assets/room7.jpeg';
-// import reviews from '../reviews';
+import ReviewCard from './ReviewCard';
 
 export default function Reviews() {
 
@@ -10,9 +10,14 @@ export default function Reviews() {
             <span>Reviews</span>
         </div>
 
+
     return (
         <div className='section'>
             <Hero img={room7} title={reviewSubtitle} />
+
+            <div className='review-card-container'>
+                <ReviewCard />
+            </div>
         </div>
     )
 }
