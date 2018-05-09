@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import room9 from '../assets/room9.jpg';
+import room2 from '../assets/room2.jpeg';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router'
 
@@ -11,7 +11,7 @@ class Header extends Component {
             showNav: false
         }
     }
-
+    
     componentWillReceiveProps(nextProps) {
         if (nextProps) {
             this.setState({ showNav: false })
@@ -40,7 +40,7 @@ class Header extends Component {
                                 <Link to='/reviews'><span>Reviews</span></Link>
                             </div>
                             <div>
-                                <img src={room9} alt='bedroom' />
+                                <img src={room2} alt='bedroom' />
                             </div>
                         </div>
                         : null
