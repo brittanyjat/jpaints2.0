@@ -14,15 +14,39 @@ module.exports = {
         const mailOptions = {
             from: `${req.body.from}`,
             to: process.env.REACT_APP_GMAIL_USER,
-            subject: `${req.body.subject}`,
-            text: `${req.body.text}`,
-            html: 
-                `<h2>From: </h2>
-                <p>${req.body.from}</p>
-                <h2>Message: </h2>
-                <p>${req.body.text}<p>
-                <h2>Contact Info:</h2>
+            subject: `New Estimate Request from ${req.body.name}`,
+            text: `${req.body.message}`,
+            html:
+                `
+                <h2>New Estimate Details</h2>
+
+                <h4>Name: </h4>
                 <p>${req.body.name}</p>
+
+                <h4>Type of Job</h4>
+                <p>${req.body.type[0] ? 'Interior' : ''}</p>
+                <p>${req.body.type[1] ? 'Exterior' : ''}</p>
+                <p>${req.body.type[2] ? 'Other' : ''}</p>
+
+                <h4>Date Requested</h4>
+                <p>${req.body.date}</p>
+
+                <h4>Square Footage</h4>
+                <p>${req.body.footage}</p>
+
+                <h4>Number of Rooms</h4>
+                <p>${req.body.rooms}</p>
+
+                <h4>Message: </h4>
+                <p>${req.body.message}<p>
+
+                <hr/>
+                <h2>Contact Info:</h2>
+
+                <h5>Email Address</h5>
+                <p>${req.body.email}</p>
+
+                <h5>Phone Number<h5>
                 <p>${req.body.number}</p>
                 `,
             replyTo: `${req.body.from}`

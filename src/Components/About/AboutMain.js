@@ -23,6 +23,7 @@ export default function AboutMain() {
                 </div>
             </div>
             <br />
+            <div className='partition' style={{height: '15px'}}></div>
             <TopPro />
         </div>
     )
