@@ -45,7 +45,7 @@ export default function ReviewCarousel() {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 7500,
         pauseOnHover: true,
         speed: 1500,
         slidesToShow: 1,
