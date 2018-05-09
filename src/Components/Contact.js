@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 export default class Contact extends React.Component {
     constructor() {
@@ -14,8 +15,8 @@ export default class Contact extends React.Component {
             other: false,
             date: null,
             message: null,
-            footage: 0,
-            rooms: 0
+            footage: '',
+            rooms: ''
         }
     }
 
@@ -36,12 +37,14 @@ export default class Contact extends React.Component {
         }
 
         axios.post('/api/email', body).then(res => {
-            console.log(res)
+            res.status === 200
+                ? toast.success('Thank You! We will contact you with further information.')
+                : toast.error('Error sending message, please try again')
         })
     }
 
     render() {
-        const { interior, exterior, other } = this.state;
+        const { interior, exterior, other, name, number, email, message } = this.state;
         return (
             <div className='contact-container'>
                 <form id='contact-form'>
@@ -89,14 +92,14 @@ export default class Contact extends React.Component {
                         required
                         placeholder='Any additional details? Baseboards? Ceilings? The more detail, the better estimate we can give you!'
                         onChange={(e) => this.handleInput('message', e.target.value)} />
-
-                    <button
-                        type='submit'
-                        form='contact-form'
-                        onClick={() => this.handleSubmit()}>
-                        Submit
-                    </button>
                 </form>
+
+                <button
+                    disabled={name && number && email && message ? false : true}
+                    className='submit-button'
+                    onClick={() => this.handleSubmit()}>
+                    Submit
+                </button>
             </div>
         )
     }
