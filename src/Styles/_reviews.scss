@@ -72,7 +72,7 @@
 }
 
 .review-card {
-    border: solid 2px $ltGray;
+    border: solid 2px $gold;
     margin: auto;
     width: 340px;
     display: flex;
@@ -81,9 +81,8 @@
     align-items: center;
     i {
         font-size: 20px;
-        color: $dkGray;
-        background-color: white;
-        border: solid .5px $ltGray;
+        color: $gold;
+        background-color: $dkGray;
         padding: 10px;
         border-radius: 50%;
         position: relative;
@@ -110,19 +109,13 @@
             text-transform: uppercase;
             color: $ltBlue;
             letter-spacing: 2px;
-            font-size: 17px;               
+            font-size: 1px;               
         }
     }
 }
 
-@media (min-width:900px){
-    // .review-card-container {
-    //     margin-top: 80px !important;
-    //     grid-template-columns: 50% 50%;
-    //     width: 90%;
-    //     margin: auto;
-    // }
-        .review-card {
-            width: 70%;
-        }
+@media (min-width:800px){
+    .review-card {
+        width: 70%;
+    }
 }
