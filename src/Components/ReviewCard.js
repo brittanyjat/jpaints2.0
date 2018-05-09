@@ -6,7 +6,6 @@ export default function ReviewCard() {
         return (
             <div className='review-card' key={x.id}>
                 <i className="fas fa-quote-right"></i>
-                {/* <i className="fas fa-user"></i> */}
                 <span>{x.review}</span>
                 <div>
                     <p>{x.name}</p>
