@@ -6,7 +6,7 @@ const express = require('express')
     , mailer = require('./mail');
 app.use(bodyParser.json());
 
-// app.use(express.static(`${__dirname}/../build`));
+app.use(express.static(`${__dirname}/../build`));
 
 app.post('/api/email', mailer.mail);
 
