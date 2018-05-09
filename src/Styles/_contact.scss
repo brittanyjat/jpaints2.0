@@ -69,12 +69,9 @@
 
 .mini-contact {
     margin: auto;
-    width: 250px;
-    height: 185px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
     h4 {
         text-align: center;
         text-transform: uppercase;
@@ -84,17 +81,26 @@
         font-size: 17px;
         margin-bottom: -5px;
     }
-    input, textarea {
-        padding-left: 5px;
-        background-color: $ltGray;
-        border: none;
-        border-radius: 1px;
-        width: 90%;
-    }
-    input {
-        height: 20px;
-    }
     button {
         @extend .submit-button;
+        margin: auto;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        input, textarea {
+            padding-left: 5px;
+            background-color: $ltGray;
+            border: none;
+            border-radius: 1px;
+            width: 90%;
+            height: 30px;
+        }
+        input {
+            height: 20px;
+        }
     }
 }
