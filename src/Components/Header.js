@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import room2 from '../assets/room2.jpeg';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router'
+import logo3 from '../assets/logo3.png';
 
 class Header extends Component {
     constructor() {
@@ -11,7 +12,7 @@ class Header extends Component {
             showNav: false
         }
     }
-    
+
     componentWillReceiveProps(nextProps) {
         if (nextProps) {
             this.setState({ showNav: false })
@@ -22,7 +23,7 @@ class Header extends Component {
         const { showNav } = this.state;
         return (
             <div id='header'>
-                <Link to='/'><h1>JPaints Utah</h1></Link>
+                <Link to='/'><img src={logo3} alt='logo' className='logo'/></Link>
                 <div onClick={() => this.setState({ showNav: !showNav })} className='menu-trigger'>
                     <i className="fas fa-bars"></i>
                 </div>
