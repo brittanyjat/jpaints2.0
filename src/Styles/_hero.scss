@@ -90,8 +90,10 @@ body {
 }
 
 .side-nav {
-    width: 100vw !important;
+    width: 55vw !important;
     height: 100vh;
+    border-left: 3px solid $gold;
+    border-bottom: 3px solid $gold;
     background-color: $dkGray;
     position: absolute;
     top: 0;
@@ -210,6 +212,9 @@ body {
     .logo {
         height: 100px;
         // margin-top: 15px;
+    }
+    .side-nav {
+        width: 35vw !important;
     }
 }
 

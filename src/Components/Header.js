@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import room2 from '../assets/room2.jpeg';
+// import room2 from '../assets/room2.jpeg';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router'
 import logo5 from '../assets/logo5.png';
@@ -40,9 +40,9 @@ class Header extends Component {
                                 <Link to='/contact'><span>Contact</span></Link>
                                 <Link to='/reviews'><span>Reviews</span></Link>
                             </div>
-                            <div>
+                            {/* <div>
                                 <img src={room2} alt='bedroom' />
-                            </div>
+                            </div> */}
                         </div>
                         : null
                 }
