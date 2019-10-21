@@ -24,3 +24,6 @@ yarn-error.log*
 
 # SASS 
 src/**/*.css
+
+# SASS 
+src/**/*.css
